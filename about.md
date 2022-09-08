@@ -3,8 +3,12 @@ title: About
 layout: page
 ---
 
-Hey! This is the "Leaf" Jekyll theme created by <a rel="me" target="_blank" href="https://twitter.com/_SupunKavinda">Supun Kavinda</a>.
+I'm a guy who loves tinkering with computers and software to expand their capabilities.  
+In this blog, I will talk about my projects and what were my approaches to make them.  
 
-You can find the source code of this theme at <a href="https://github.com/SupunKavinda/jekyll-theme-leaf">Github</a>
+You can visit my [GitHub](https://github.com/DaniElectra) profile to view all my projects and contributions!  
 
-(Change this by editing `about.md` file)
+## Credits
+
+This blog uses the ["Leaf"](https://github.com/supun-io/jekyll-theme-leaf) Jekyll theme created by [Supun Kavinda](https://twitter.com/supun_io).
+
