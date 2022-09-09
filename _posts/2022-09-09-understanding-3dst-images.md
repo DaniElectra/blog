@@ -10,7 +10,7 @@ Sadly, [the service was shut down](https://www.nintendo.co.uk/Nintendo-3DS-Famil
 
 ## Introduction
   
-A few months ago, I searched about revivals of the Nintendo Anime Channel and found [this project](https://github.com/cooolgamer/Nintendo-Anime-Channel-Revival). Although it was possible to play your own videos using the Mobiclip's MOFLEX format (if you had access to Nintendo's 3DS development kit, as there are currently no encoders available to public), there wasn't any information about how the thumbnails worked (we only knew that they were in a 3DST format, by looking at the revival's project files).
+A few months ago, I searched about revivals of the Nintendo Anime Channel and found [this project](https://github.com/cooolgamer/Nintendo-Anime-Channel-Revival) on GitHub. Although it was possible to play your own videos using the Mobiclip's MOFLEX format (if you had access to Nintendo's 3DS development kit, as there are currently no encoders available to public), there wasn't any information about how the thumbnails worked (we only knew that they were in a 3DST format, by looking at the revival's project files).
 
 ## The investigation
 
@@ -54,8 +54,9 @@ But that wasn't all, since `rgba8` uses hex 0x0 and `etc1` uses hex 0x4, so I te
 
 ## Things to know
 
-- The image resolutions must be a number that belongs to a power of two.
+- The image resolutions must be a number that belongs to a power of two (it supports 256x256 or 512x256, but it will *fail* with 256x192 or 192x192).  
 - For some reason, the Nintendo Anime Channel application doesn't have an image format assigned to the hex value 0x3.
+- Recently, I found out that the modified Ohana3DS is available on [GitHub](https://github.com/CaptainSwag101/Ohana3DS-Rebirth) as a fork. It seems that it detects for Minecraft's 3DST files, which use a different implementation from Nintendo ones.
 
 ![Nintendo Anime Channel showing custom 3DST images](assets/img/2022-09/anime-channel-images.jpg)
 
