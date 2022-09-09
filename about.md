@@ -4,7 +4,7 @@ layout: page
 ---
 
 I'm a guy who loves tinkering with computers and software to expand their capabilities.  
-In this blog, I will talk about my projects and what were my approaches to make them.  
+In this blog, I will talk about my projects and what are my approaches to make them.  
 
 You can visit my [GitHub](https://github.com/DaniElectra) profile to view all my projects and contributions!  
 
