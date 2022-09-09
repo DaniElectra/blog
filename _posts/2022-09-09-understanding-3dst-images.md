@@ -34,7 +34,7 @@ To try and decode the format, I used a *reverse-engineering* tool called `dnSpy`
 Using a hex editor, I saw that Nintendo Anime Channel's 3DST files had the word `texture` on them. Also, the program was looking for width, height and format variables at different hexadecimal spots than where they are.  
 These spots are easy to locate, since the 3DST files from inside the application are square textures (which mean they have the same value), and the format was spottable by comparing the archived image from the ones that are bundled with the app.  
 
-![3DST file in hexadeccimal](assets/img/2022-09/3dst-hexadecimal.png)
+![3DST file in hexadecimal](assets/img/2022-09/3dst-hexadecimal.png)
 
 Finally, I had to set the image data offset, which was at 0x80. When I tried running the modified Ohana3DS again, it loaded the image correctly and showed me that:  
 
@@ -64,5 +64,5 @@ Now, this discoveries are available on my GitHub and I've made PRs to [Ohana3DS-
 
 This documentation is available to anyone and is licensed under the [MIT](https://opensource.org/licenses/MIT) License. Feel free to try and add 3DST images support to more programs!
 
-Thanks for reading, and have a nice day!
+*Thanks for reading, and have a nice day!*  
 
