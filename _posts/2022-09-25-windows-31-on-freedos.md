@@ -33,7 +33,7 @@ When trying to boot to FreeDOS, it didn't load completely. The laptop would simp
 ![FreeDOS failing to load](assets/img/2022-09/freedos-boot-usb.jpg)
 
 I tried different approaches to fix (or skip) the error, like using different images of FreeDOS, and the most successful of them was using the FreeDOS environment of [Rufus](https://rufus.ie), where I could get FreeDOS running.  
-The solution that lead me to installing FreeDOS on the laptop was to install it first on a VM, and copy the files to the laptop using DSL from USB, which worked completely fine (not before reformatting the drive to FAT32).  
+The solution that lead me to installing FreeDOS on the laptop was to install it first on a VM, and copy the files to the laptop (not before reformatting the drive to FAT32) using DSL from USB, which worked completely fine.  
 
 ![File copying using DSL](assets/img/2022-09/copying-files.jpg)  
 
@@ -46,7 +46,7 @@ The installation of Windows 3.11 was easier than FreeDOS. Before proceeding with
 
 ### Requirements for Windows 3.1x Enhanced on FreeDOS
 
-- You need to **compile** the kernel by yourself and add the *Windows 3.1* parameter, as the code that activates Windows 3.1x support won't be enable by default on the kernel.  
+- You need to **compile** the kernel by yourself and add the *Windows 3.1* parameter, as the code that activates Windows 3.1x support won't be enabled by default on the kernel.  
 - You can have HimemX running, but you **cannot** load Jemm, as it will complain about protected software running and tell you to close it.  
 - Before running Windows 3.1x, you **must** run the `share` command.  
 
