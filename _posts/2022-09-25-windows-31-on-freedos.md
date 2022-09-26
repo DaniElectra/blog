@@ -48,7 +48,12 @@ The installation of Windows 3.11 was easier than FreeDOS. Before proceeding with
 
 - You need to **compile** the kernel by yourself and add the *Windows 3.1* parameter, as the code that activates Windows 3.1x support won't be enabled by default on the kernel.  
 - You can have HimemX running, but you **cannot** load Jemm, as it will complain about protected software running and tell you to close it.  
-- Before running Windows 3.1x, you **must** run the `share` command.  
+- Before running Windows 3.1x, you **must** run the `share` command and add the following parameter to the Windows `system.ini` file:  
+
+```ini
+[386Enh]
+InDOSPolling=TRUE
+```
 
 I started the installation with Jemm running, as the GEMMIS detection isn't applied during the installation. The setup went flawlessly, and it installed without any errors whatsoever (I only needed to rewrite the `autoexec.bat` and `config.sys` files to the FreeDOSS counterparts `fdauto.bat` and `fdconfig.sys`).  
 
